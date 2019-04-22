@@ -3,3 +3,7 @@ resource "aws_instance" "web" {
   instance_type = "${lookup(var.sizes, var.type)}"
   count = "${var.servers}"
 }
+
+output "ids" {
+  value = ["${aws_instance.web.*.id}"]
+}
