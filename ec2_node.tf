@@ -1,6 +1,6 @@
 module "node" {
   source = "./cluster"
-  servers = 3
+  servers = "${var.prod ? 3 : 1}"
   type = "node"
 }
 
