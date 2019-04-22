@@ -1,1 +1,2 @@
 variable "servers" {}
+variable "type" {}
