@@ -10,6 +10,7 @@ resource "aws_lambda_function" "site_ping" {
     variables = {
       EXPECTED = "${var.expected}"
       SITE = "${var.site}"
+      PROD = "${var.prod ? "1" : ""}"
     }
   }
 }
