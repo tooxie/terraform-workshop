@@ -10,3 +10,4 @@ Code for the terraform workshop. In this workshop you will see how to:
 * Make type a map
 * Use terraform outputs
 * Use conditional values
+* How to deploy a lambda function
