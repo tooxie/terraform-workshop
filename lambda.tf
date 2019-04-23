@@ -8,8 +8,8 @@ resource "aws_lambda_function" "site_ping" {
 
   environment {
     variables = {
-      EXPECTED = "Machine Learning and Data Science consulting"
-      SITE = "https://tryolabs.com/"
+      EXPECTED = "${var.expected}"
+      SITE = "${var.site}"
     }
   }
 }
